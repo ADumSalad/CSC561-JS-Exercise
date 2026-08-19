@@ -89,7 +89,7 @@ function main() {
     for (var x2=300; x2<400; x2++) 
         for (var y2=250; y2<375; y2++) {
             drawPixel(imagedata2,x2,y2,c2);
-            // console.log("draw at " +x+ " " +y);
+            console.log("draw at " +x2+ " " +y2);
         }
     
     context.putImageData(imagedata, 0, 0); // display the image in the context
