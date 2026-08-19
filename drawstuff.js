@@ -76,7 +76,6 @@ function main() {
     var w = context.canvas.width; // as set in html
     var h = context.canvas.height;  // as set in html
     var imagedata = context.createImageData(w,h);
-    var imagedata2 = context.createImageData(w,h);
  
     // Draw a rectangle with pixels
     var c = new Color(255,255,0,255); // the color at the pixel: black opaque
@@ -85,13 +84,6 @@ function main() {
             drawPixel(imagedata,x,y,c);
             // console.log("draw at " +x+ " " +y);
         }
-    // var c2 = new Color(0,255,0,255);
-    // for (var x2=300; x2<400; x2++) 
-    //     for (var y2=250; y2<375; y2++) {
-    //         drawPixel(imagedata2,x2,y2,c2);
-    //         console.log("draw at " +x2+ " " +y2);
-    //     }
     
     context.putImageData(imagedata, 0, 0); // display the image in the context
-    context.putImageData(imagedata2, 0, 0);
 }
