@@ -84,6 +84,13 @@ function main() {
             drawPixel(imagedata,x,y,c);
             // console.log("draw at " +x+ " " +y);
         }
+
+    var c2 = new Color(0,255,0,255); // the color at the pixel: black opaque
+    for (var x=200; x<350; x++) 
+        for (var y=100; y<180; y++) {
+            drawPixel(imagedata,x,y,c2);
+            // console.log("draw at " +x+ " " +y);
+        }
     
     context.putImageData(imagedata, 0, 0); // display the image in the context
 }
