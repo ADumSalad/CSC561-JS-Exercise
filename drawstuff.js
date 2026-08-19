@@ -84,6 +84,12 @@ function main() {
             drawPixel(imagedata,x,y,c);
             // console.log("draw at " +x+ " " +y);
         }
+    var c2 = new Color(0,255,0,255);
+    for (var x=300; x<400; x++) 
+        for (var y=250; y<375; y++) {
+            drawPixel(imagedata,x,y,c2);
+            // console.log("draw at " +x+ " " +y);
+        }
     
     context.putImageData(imagedata, 0, 0); // display the image in the context
 }
